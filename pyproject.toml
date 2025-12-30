@@ -1,0 +1,17 @@
+[project]
+name = "totebag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kracekumar", email = "me@kracekumar.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+totebag = "totebag:main"
+
+[build-system]
+requires = ["uv_build>=0.9.3,<0.10.0"]
+build-backend = "uv_build"
