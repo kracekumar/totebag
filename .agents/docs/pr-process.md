@@ -32,21 +32,25 @@ type(scope): description
 ```
 
 Types:
-- `feat` - New feature
-- `fix` - Bug fix
-- `docs` - Documentation
-- `refactor` - Code refactoring
-- `test` - Adding tests
-- `chore` - Maintenance
+- `[feature]` - New feature
+- `[fix]` - Bug fix
+- `[docs]` - Documentation
+- `[refactor]` - Code refactoring
+- `[test]` - Adding tests
+- `[chore]` - Maintenance
 
 ## Branch Naming
 
+General pattern
 ```
-type/short-description
+type/<github-issue-id>-short-description
 ```
+- github-issue-id: Github issue id for the current changes
+- if there is no issue then drop the prefix and use the format: `type/short-description`
 
 Examples:
-- `feat/user-authentication`
-- `fix/validation-error`
-- `docs/api-reference`
+- `feature/issue-1-user-authentication`
+- `fix/issue-2-validation-error`
+- `docs/issue-3-api-reference`
+- `feature/improve-speed`
 

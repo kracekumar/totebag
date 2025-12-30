@@ -13,17 +13,14 @@ This directory contains resources for AI agents working on this project.
 ├── AGENTS.md           # This file
 ├── commands/           # Slash command definitions
 │   └── AGENTS.md       # Command index and format
-├── tasks/              # Task tracking
+├── tasks/              # Task tracking and notes.
+├── docs/               # Internal docs for the agents
 ```
 
 ## Directory Index
 
 - @.agents/commands/AGENTS.md - Slash commands
 - @.agents/docs/ - Documentation (see root @AGENTS.md for full index)
-- @.agents/tasks/ - Task tracking
-
-## Working with GH issues
-
-- Always work on a new branch.
+- @.agents/tasks/ - Task tracking and internal notes, analysis
 
 
