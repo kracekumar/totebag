@@ -1,13 +1,24 @@
 [project]
 name = "totebag"
 version = "0.1.0"
-description = "Add your description here"
+description = "A Terminal User Interface for managing uv Python projects"
 readme = "README.md"
+license = { text = "MIT" }
 authors = [
     { name = "kracekumar", email = "me@kracekumar.com" }
 ]
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.11,<3.16"
+dependencies = [
+    "textual[syntax]>=0.68.0",
+    "uv>=0.4.0",
+    "textual-autocomplete>=0.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.8.0",
+    "pytest>=7.4.0",
+]
 
 [project.scripts]
 totebag = "totebag:main"
